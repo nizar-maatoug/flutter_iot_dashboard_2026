@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:iot_dashboard_app/core/theme/app_theme.dart';
 import 'package:iot_dashboard_app/models/measurement.dart';
+import 'package:iot_dashboard_app/presentation/screens/dashboard_screen.dart';
 import 'package:iot_dashboard_app/services/websocket_service.dart';
 import 'package:logger/logger.dart';
 
@@ -8,10 +10,24 @@ void main() {
 }
 
 class DashboardApp extends StatelessWidget {
+  const DashboardApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'IoT Dashboard',
+      debugShowCheckedModeBanner: false,
+      theme: AppTheme.lightTheme,
+      home: DashboardScreen(),
+    );
+  }
+}
+
+class DashboardApp_ extends StatelessWidget {
   final WebSocketService _webSocketService = WebSocketService();
   final Logger _logger = Logger();
 
-  DashboardApp({super.key});
+  DashboardApp_({super.key});
 
   @override
   Widget build(BuildContext context) {
