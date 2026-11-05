@@ -13,7 +13,7 @@ class Measurement {
 
   factory Measurement.fromJson(Map<String, dynamic> json) {
     return Measurement(
-      value: (json['valeur'] as num).toDouble(),
+      value: (json['valeur'] as num?)?.toDouble() ?? 0.0,
       timestamp: DateTime.parse(json['date_prise']),
       measurementType: MeasurementType.temperature, // Assuming a default value for typeMeasurement, adjust as needed
     );
