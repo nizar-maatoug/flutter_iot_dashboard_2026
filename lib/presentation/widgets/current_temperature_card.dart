@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:iot_dashboard_app/presentation/widgets/temperature_stream_widget.dart';
 
 class CurrentTemperatureCard extends StatelessWidget {
 
@@ -18,12 +19,7 @@ class CurrentTemperatureCard extends StatelessWidget {
               size: 48,
             ),
             SizedBox(height: 12),
-            Text(
-              '34.2 °C',
-              style: Theme.of(context)
-                  .textTheme
-                  .displaySmall,
-            )
+            TempeartureStreamWidget(),
           ],
         ),
       ),
