@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:iot_dashboard_app/presentation/widgets/temperature_stream_widget.dart';
 
 class CurrentTemperatureCard extends StatelessWidget {
+  final double value;
 
   const CurrentTemperatureCard({
     super.key,
+    required this.value,
   });
 
   @override
@@ -19,7 +21,7 @@ class CurrentTemperatureCard extends StatelessWidget {
               size: 48,
             ),
             SizedBox(height: 12),
-            TempeartureStreamWidget(),
+            TempeartureStreamWidget(value: value),
           ],
         ),
       ),

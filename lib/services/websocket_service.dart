@@ -21,7 +21,7 @@ class WebSocketService {
 
         final json = jsonDecode(event);
         return Measurement.fromJson(json);
-      });
+      }).asBroadcastStream();
 
   void dispose() {
     _channel.sink.close();

@@ -35,7 +35,7 @@ class DashboardApp_ extends StatelessWidget {
       title: 'IoT Dashboard',
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(title: Text('IoT Dashboard')),
+        //appBar: AppBar(title: Text('IoT Dashboard')),
         body: StreamBuilder<Measurement>(
           stream: _webSocketService.measurements,
           builder: (context, snapshot) {
