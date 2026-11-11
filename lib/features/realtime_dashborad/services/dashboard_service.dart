@@ -1,8 +1,8 @@
 import 'dart:async';
 
-import 'package:iot_dashboard_app/models/dashboard_data.dart';
-import 'package:iot_dashboard_app/models/measurement.dart';
-import 'package:iot_dashboard_app/services/websocket_service.dart';
+import 'package:iot_dashboard_app/features/realtime_dashborad/models/dashboard_data.dart';
+import 'package:iot_dashboard_app/features/realtime_dashborad/models/measurement.dart';
+import 'package:iot_dashboard_app/features/realtime_dashborad/services/websocket_service.dart';
 
 class DashboardService {
   final WebSocketService _webSocketService;

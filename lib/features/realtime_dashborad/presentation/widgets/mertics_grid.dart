@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:iot_dashboard_app/models/dashboard_data.dart';
-import 'package:iot_dashboard_app/presentation/widgets/metric_card.dart';
+import 'package:iot_dashboard_app/features/realtime_dashborad/models/dashboard_data.dart';
+import 'package:iot_dashboard_app/features/realtime_dashborad/presentation/widgets/metric_card.dart';
 
 class MetricsGrid extends StatelessWidget {
   final bool isMobile;

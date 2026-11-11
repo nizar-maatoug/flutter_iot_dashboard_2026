@@ -9,7 +9,7 @@ class AppColors {
 
   static const chart = Color(0xFF00BCD4);
 
-  static const background = Color(0xFFF5F7FA);
+  static const background = Color(0xFF00BC1);
 
   static const card = Colors.white;
 }

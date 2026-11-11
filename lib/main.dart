@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:iot_dashboard_app/core/theme/app_theme.dart';
-import 'package:iot_dashboard_app/models/measurement.dart';
-import 'package:iot_dashboard_app/presentation/screens/dashboard_screen.dart';
-import 'package:iot_dashboard_app/services/websocket_service.dart';
+import 'package:iot_dashboard_app/features/realtime_dashborad/models/measurement.dart';
+import 'package:iot_dashboard_app/features/realtime_dashborad/presentation/screens/dashboard_screen.dart';
+import 'package:iot_dashboard_app/features/realtime_dashborad/services/websocket_service.dart';
 import 'package:logger/logger.dart';
 
 void main() {

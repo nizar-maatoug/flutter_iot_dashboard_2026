@@ -1,4 +1,4 @@
-import 'package:iot_dashboard_app/models/measurement_types.dart';
+import 'package:iot_dashboard_app/features/realtime_dashborad/models/measurement_types.dart';
 
 class Measurement {
   final double value;

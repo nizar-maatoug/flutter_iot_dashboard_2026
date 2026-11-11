@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:iot_dashboard_app/models/dashboard_data.dart';
-import 'package:iot_dashboard_app/presentation/widgets/current_temperature_card.dart';
-import 'package:iot_dashboard_app/presentation/widgets/mertics_grid.dart';
-import 'package:iot_dashboard_app/presentation/widgets/realtime_chart.dart';
-import 'package:iot_dashboard_app/services/dashboard_service.dart';
-import 'package:iot_dashboard_app/services/websocket_service.dart';
+import 'package:iot_dashboard_app/features/realtime_dashborad/models/dashboard_data.dart';
+import 'package:iot_dashboard_app/features/realtime_dashborad/presentation/widgets/current_temperature_card.dart';
+import 'package:iot_dashboard_app/features/realtime_dashborad/presentation/widgets/mertics_grid.dart';
+import 'package:iot_dashboard_app/features/realtime_dashborad/presentation/widgets/realtime_chart.dart';
+import 'package:iot_dashboard_app/features/realtime_dashborad/services/dashboard_service.dart';
+import 'package:iot_dashboard_app/features/realtime_dashborad/services/websocket_service.dart';
 
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({super.key});

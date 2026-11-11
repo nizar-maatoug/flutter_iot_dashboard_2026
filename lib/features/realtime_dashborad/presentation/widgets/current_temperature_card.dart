@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:iot_dashboard_app/presentation/widgets/temperature_stream_widget.dart';
+import 'package:iot_dashboard_app/features/realtime_dashborad/presentation/widgets/temperature_stream_widget.dart';
 
 class CurrentTemperatureCard extends StatelessWidget {
   final double value;

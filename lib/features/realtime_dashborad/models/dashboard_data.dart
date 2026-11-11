@@ -1,4 +1,4 @@
-import 'package:iot_dashboard_app/models/measurement.dart';
+import 'package:iot_dashboard_app/features/realtime_dashborad/models/measurement.dart';
 
 class DashboardData {
   final Measurement current;
