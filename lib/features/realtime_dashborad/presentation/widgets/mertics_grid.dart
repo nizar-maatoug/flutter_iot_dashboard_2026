@@ -4,12 +4,18 @@ import 'package:iot_dashboard_app/features/realtime_dashborad/presentation/widge
 
 class MetricsGrid extends StatelessWidget {
   final bool isMobile;
-  final DashboardData data;
+  final double avg;
+  final double min;
+  final double max;
+  final int points;
 
   const MetricsGrid({
     super.key,
     required this.isMobile,
-    required this.data,
+    required this.avg,
+    required this.min,
+    required this.max,
+    required this.points,
   });
 
   @override
@@ -25,19 +31,19 @@ class MetricsGrid extends StatelessWidget {
         children: [
           MetricCard(
             title: "Average",
-            value: data.avg.toStringAsFixed(2),
+            value: avg.toStringAsFixed(2),
           ),
           MetricCard(
             title: "Maximum",
-            value: data.max.toStringAsFixed(2),
+            value: max.toStringAsFixed(2),
           ),
           MetricCard(
             title: "Minimum",
-            value: data.min.toStringAsFixed(2),
+            value: min.toStringAsFixed(2),
           ),
           MetricCard(
             title: "Points",
-            value: data.history.length.toString(),
+            value: points.toString(),
           ),
         ],
       );
@@ -53,19 +59,19 @@ class MetricsGrid extends StatelessWidget {
       children: [
         MetricCard(
           title: "Average",
-          value: data.avg.toStringAsFixed(2),
+          value: avg.toStringAsFixed(2),
         ),
         MetricCard(
           title: "Maximum",
-          value: data.max.toStringAsFixed(2),
+          value: max.toStringAsFixed(2),
         ),
         MetricCard(
           title: "Minimum",
-          value: data.min.toStringAsFixed(2),
+          value: min.toStringAsFixed(2),
         ),
         MetricCard(
           title: "Points",
-          value: data.history.length.toString(),
+          value: points.toString(),
         ),
       ],
     );

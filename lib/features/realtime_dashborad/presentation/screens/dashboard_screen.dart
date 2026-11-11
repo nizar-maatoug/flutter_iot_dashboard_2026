@@ -70,7 +70,13 @@ class DashboardBody extends StatelessWidget {
 
               const SizedBox(height: 16),
 
-              MetricsGrid(isMobile: isMobile, data: data),
+              MetricsGrid(
+                isMobile: isMobile,
+                avg: data.avg,
+                min: data.min,
+                max: data.max,
+                points: data.history.length,
+              ),
 
               const SizedBox(height: 16),
 

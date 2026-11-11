@@ -1,13 +1,11 @@
 class Statistics {
   final double min;
   final double max;
-  final double average;
-  final double stdDeviation;
-
+  final double avg;
+  
   const Statistics({
     required this.min,
     required this.max,
-    required this.average,
-    required this.stdDeviation,
+    required this.avg,    
   });
 }
