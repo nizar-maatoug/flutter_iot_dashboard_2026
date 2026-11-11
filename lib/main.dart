@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:iot_dashboard_app/core/router/app_router.dart';
 import 'package:iot_dashboard_app/core/theme/app_theme.dart';
 import 'package:iot_dashboard_app/features/analytics/presentation/screens/analytics_screen.dart';
 import 'package:iot_dashboard_app/features/realtime_dashborad/models/measurement.dart';
@@ -15,11 +16,11 @@ class DashboardApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'IoT Dashboard',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
-      home: AnalyticsScreen(), //DashboardScreen(),
+      routerConfig: AppRouter.router,
     );
   }
 }

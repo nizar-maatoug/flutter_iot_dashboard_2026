@@ -30,11 +30,11 @@ class _AnalyticsScreenState
 
   DateTime _end = DateTime.now();
 
-  Future<AnalyticsResult>? _future;
+  Future<AnalyticsResult>? _analytics_results;
 
   Future<void> _search() async {
     setState(() {
-      _future = _service.search(
+      _analytics_results = _service.search(
         MeasurementQuery(
           grandeurId: _selectedGrandeur,
           start: _start,
@@ -92,7 +92,7 @@ class _AnalyticsScreenState
             Expanded(
               child: FutureBuilder<
                   AnalyticsResult>(
-                future: _future,
+                future: _analytics_results,
                 builder:
                     (context, snapshot) {
 
